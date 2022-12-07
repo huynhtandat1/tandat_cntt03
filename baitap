@@ -1,0 +1,83 @@
+# Bai 1:
+def xuat_kq():
+    t = int(input("Nhập: "))
+    if 0 < t <= 100:
+        for i in range(1, t + 1):
+            c = input()
+            print(f"Test{i}:\n {c.title()},")
+
+xuat_kq()
+
+
+# Bai 2:
+def xuat_kq():
+    t = int(input("Nhập: "))
+    if 0 < t <= 100:
+        for i in range(1, t + 1):
+            str1 = input()
+            nguyenam = 0
+            phuam = 0
+            str1.lower()
+            for n in str1:
+                if (n == 'a' or n == 'e' or n == 'i' or i == 'o' or n == 'u'):
+                    nguyenam = nguyenam + 1
+            else:
+                phuam = phuam + 1
+                print(f"Test{i}:\n{nguyenam} \n{phuam}")
+
+xuat_kq()
+
+
+# Bai 3:
+def xuat_kq():
+    t = int(input("Nhập: "))
+    if 0 < t <= 100:
+        for i in range(1, t + 1):
+            str = input()
+            print(f"Test{i}:", str.count(" "))
+
+
+xuat_kq()
+
+# Bai 4:
+def xuat_kq():
+    t = int(input("Nhập số lượng các dòng: "))
+    if t > 0 and t <= 100:
+        for i in range(1, t + 1):
+            str_word = input("Nhập chữ: ")
+            print(str_word.replace("\t", " "))
+
+
+xuat_kq()
+
+
+# Bai 5:
+def xuat_kq(s1, s2):
+   if s2 in s1:
+       print(s1.count(s2))
+   else:
+       print('Chuỗi "{}" không xuất hiện trong chuỗi "{}"'.format(s2, s1))
+
+
+t = int(input("Nhập: "))
+if 0 < t <= 100:
+    for i in range(t):
+        s1 = input("nhập 1: ")
+        s2 = input("nhập 2: ")
+        print(f"test {i + 1}:", end="\n")
+        xuat_kq(s1, s2)
+
+
+# Bai 6:
+def xuat_kq(s1, s2, s3):
+    print(s1.replace(s2, s3))
+
+
+t = int(input("Nhập: "))
+if 0 < t <= 100:
+    for i in range(t):
+        s1 = input("Nhập chuỗi: ")
+        s2 = input("nhập từ cũ: ")
+        s3 = input("Nhập từ mới: ")
+        print(f"test {i + 1}:", end="\n")
+        xuat_kq(s1, s2, s3)
